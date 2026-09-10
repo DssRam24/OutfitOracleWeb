@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-tech: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  body {
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    background-image: 
+      radial-gradient(ellipse 90% 50% at 50% -10%, rgba(99, 102, 241, 0.12), transparent 70%),
+      radial-gradient(ellipse 70% 40% at 90% 40%, rgba(236, 72, 153, 0.06), transparent 60%);
+    background-attachment: fixed;
+  }
+}
+
+/* Modern, Human-Crafted Surface & Component Utilities */
+
+.y2k-glass-card {
+  background-color: #121826;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  position: relative;
+}
+
+/* Buttons with tactile, natural human feel */
+.y2k-btn-primary {
+  background: #4f46e5;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.15s ease;
+  border-radius: 12px;
+}
+
+.y2k-btn-primary:hover:not(:disabled) {
+  background: #4338ca;
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.y2k-btn-primary:active:not(:disabled) {
+  transform: translateY(0);
+  background: #3730a3;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.y2k-btn-cyan {
+  background: #0284c7;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.15s ease;
+  border-radius: 12px;
+}
+
+.y2k-btn-cyan:hover:not(:disabled) {
+  background: #0369a1;
+  transform: translateY(-1px);
+}
+
+.y2k-btn-metallic {
+  background: #1e2638;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: #e2e8f0;
+  font-weight: 500;
+  transition: all 0.15s ease;
+  border-radius: 12px;
+}
+
+.y2k-btn-metallic:hover:not(:disabled) {
+  background: #28334a;
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+/* Status Cards & Panels */
+.y2k-laundry-active {
+  background: rgba(236, 72, 153, 0.1);
+  border: 1px solid rgba(236, 72, 153, 0.3);
+}
+
+.y2k-clean-active {
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+/* Refined, clean text heading */
+.y2k-holo-text {
+  color: #ffffff;
+}
+
+.y2k-chrome-text {
+  color: #f1f5f9;
+}
+
+/* Modern clean meter panel */
+.y2k-lcd-panel {
+  background: #0d121f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  position: relative;
+}
+
+/* Hide scrollbar but allow scrolling */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

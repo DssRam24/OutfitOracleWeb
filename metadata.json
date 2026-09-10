@@ -1,0 +1,6 @@
+{
+  "name": "OutfitOracle",
+  "description": "Wardrobe styling and outfit suggestion engine for Indian college students with charisma scoring, weather adaptation, silhouette balancing, and laundry management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
